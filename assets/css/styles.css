@@ -1,0 +1,94 @@
+:root {
+    color-scheme: dark;
+    --shadow-color: #FF9E9E;
+    --shadow-color-light: white;
+    --angle: 0deg;
+}
+
+body {
+    background-color: hsl(280, 45%, 8%);
+    color: white;
+    font-family: Comfortaa;
+}
+
+header {
+    background-image: url("../img/banner.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.neon-effect {
+    color: white;
+    text-shadow: -1px -1px 1px var(--shadow-color-light), -1px 1px 1px var(--shadow-color-light), 1px -1px 1px var(--shadow-color-light), 1px 1px 1px var(--shadow-color-light),
+        0 0 3px var(--shadow-color-light), 0 0 10px var(--shadow-color-light), 0 0 20px var(--shadow-color-light),
+        0 0 30px var(--shadow-color), 0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color), 0 0 70px var(--shadow-color), 0 0 100px var(--shadow-color), 0 0 200px var(--shadow-color);
+}
+
+.footer {
+    border-top: 2px solid #955a9f;
+    background-color: #200A31;
+    color: #333;
+}
+
+.btn-purple {
+    background-color: #db94e8;
+    color: white;
+}
+
+.btn-purple:hover {
+    background-color: #80458a;
+}
+
+ol {
+    list-style: none;
+    counter-reset: item;
+    padding-left: 10px;
+}
+
+li {
+    counter-increment: item;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+li:before {
+    font-size: 28px;
+    margin-right: 20px;
+    content: counter(item);
+    color: white;
+    text-align: center;
+    display: inline-block;
+    color: white;
+    text-shadow: -1px -1px 1px var(--shadow-color-light), -1px 1px 1px var(--shadow-color-light), 1px -1px 1px var(--shadow-color-light), 1px 1px 1px var(--shadow-color-light),
+        0 0 3px var(--shadow-color-light), 0 0 10px var(--shadow-color-light), 0 0 20px var(--shadow-color-light),
+        0 0 30px var(--shadow-color), 0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color), 0 0 70px var(--shadow-color), 0 0 100px var(--shadow-color), 0 0 200px var(--shadow-color);
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 768px) {
+    li {
+        font-size: 22px;
+    }
+
+    li:before {
+        font-size: 32px;
+    }
+}
